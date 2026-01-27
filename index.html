@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First-Time Homebuyer Blueprint Webinar | Patrick Jones</title>
+    <meta name="description"
+        content="Join California's trusted mortgage expert Patrick Jones for a free live training that reveals the exact step-by-step system to navigate your first home purchase with confidence.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tracking Scripts -->
+    <!-- GHL Form Tracking -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form');
+            if (form) {
+                form.addEventListener('submit', function (e) {
+                    // e.preventDefault(); // Uncomment if handling via AJAX
+                    console.log('Form submitted');
+                    // GHL logic would live here
+                });
+            }
+        });
+    </script>
+
+    <!-- Facebook Pixel -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID'); // Replace with actual ID
+        fbq('track', 'PageView');
+        fbq('track', 'ViewContent', {
+            content_name: 'First-Time Homebuyer Webinar Registration',
+            content_category: 'Webinar'
+        });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1" /></noscript>
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_TAG_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YOUR_TAG_ID');
+        gtag('event', 'page_view', {
+            page_title: 'Webinar Registration',
+            page_location: window.location.href
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="assets/img/HSS Logo horizontal.png" alt="Home Strategy Services Logo" class="logo">
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Hero / Above-the-Fold -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <!-- Left Column: Copy -->
+                    <div class="hero-content">
+                        <span class="eyebrow">Free Live Webinar Training</span>
+                        <h1>First-Time Homebuyer Blueprint: From Pre-Approval to Keys in 60 Minutes</h1>
+                        <p class="subheadline">Join California's trusted mortgage expert Patrick Jones for a free live
+                            training that reveals the exact step-by-step system to navigate your first home purchase
+                            with confidence—even if you're confused about where to start or worried about costly
+                            mistakes.</p>
+
+                        <div class="webinar-time">
+                            <p><strong>📅 WHEN:</strong> Tuesday, February 3rd, 2026</p>
+                            <p><strong>⏰ TIME:</strong> 7:00 PM PST</p>
+                        </div>
+
+                        <div class="hero-details">
+                            <h3>WHAT YOU'LL DISCOVER:</h3>
+                            <ul>
+                                <li>The "4 C's" lenders actually look for (and how to position yourself as their ideal
+                                    borrower)</li>
+                                <li>How to secure pre-approval in days—not weeks—with the exact documents you need</li>
+                                <li>Little-known down payment assistance programs available in California (save
+                                    thousands)</li>
+                                <li>The 7 biggest first-time homebuyer mistakes that cost buyers $10,000+ (and how to
+                                    avoid them)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Form -->
+                    <div class="hero-form">
+                        <div class="reg-form-card">
+                            <h3>Save My Free Seat</h3>
+                            <form action="#" method="POST" id="registration-form">
+                                <div class="form-group">
+                                    <label for="first_name">First Name*</label>
+                                    <input type="text" id="first_name" name="first_name" class="form-control" required
+                                        placeholder="Enter your first name">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email Address*</label>
+                                    <input type="email" id="email" name="email" class="form-control" required
+                                        placeholder="Enter your best email">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Mobile Phone Number*</label>
+                                    <input type="tel" id="phone" name="phone" class="form-control" required
+                                        placeholder="(555) 555-5555">
+                                    <small style="color: #666; font-size: 0.8em; display: block; margin-top: 4px;">For
+                                        webinar reminders</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="agent_status">Are you currently working with a real estate
+                                        agent?</label>
+                                    <select id="agent_status" name="agent_status" class="form-control">
+                                        <option value="">Select an option...</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-check">
+                                    <input type="checkbox" id="sms_consent" name="sms_consent" checked>
+                                    <label for="sms_consent">Send me webinar reminders via text</label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-full-mobile">SAVE MY FREE SEAT
+                                    →</button>
+
+                                <div class="trust-badges">
+                                    <span class="trust-item">🔒 SSL Secure</span>
+                                    <span class="trust-item">✨ 100% Free Training</span>
+                                </div>
+                                <p class="p-small">Limited Spots Available • Register in 30 Seconds</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Problem Agitation -->
+        <section class="problem-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="problem-headline">You're ready to stop renting and build equity. But the process feels
+                        like a minefield.</h2>
+                    <p class="subheadline" style="max-width: 800px; margin: 0 auto 3rem;">Every time you start
+                        researching, you're hit with conflicting advice, confusing terminology, and the nagging fear of
+                        making an expensive mistake.</p>
+                </div>
+
+                <h3 class="text-center" style="margin-bottom: 2rem;">SOUND FAMILIAR?</h3>
+
+                <div class="pain-points-grid">
+                    <div class="pain-point">
+                        <p><span class="pain-icon">❌</span> You're overwhelmed by mortgage options—fixed rate? ARM? FHA?
+                            Conventional? What's actually best for YOUR situation?</p>
+                    </div>
+                    <div class="pain-point">
+                        <p><span class="pain-icon">❌</span> You're worried your credit score isn't "good enough" but you
+                            don't know what lenders are really looking for.</p>
+                    </div>
+                    <div class="pain-point">
+                        <p><span class="pain-icon">❌</span> You're confused about how much you actually need to
+                            save—down payment, closing costs, reserves... it feels impossible.</p>
+                    </div>
+                    <div class="pain-point">
+                        <p><span class="pain-icon">❌</span> You're terrified of missing a critical step that could cost
+                            you thousands or even derail your purchase.</p>
+                    </div>
+                    <div class="pain-point">
+                        <p><span class="pain-icon">❌</span> You've heard horror stories about buyers who got locked into
+                            bad loan terms or overpaid because they didn't know what to ask.</p>
+                    </div>
+                    <div class="pain-point">
+                        <p><span class="pain-icon">❌</span> You're not sure when to start the pre-approval process, and
+                            you worry about starting too early or too late.</p>
+                    </div>
+                </div>
+
+                <div class="truth-block">
+                    <h3>THE TRUTH IS:</h3>
+                    <p>The homebuying process doesn't have to be this confusing. The problem isn't that it's too
+                        complicated—it's that nobody has shown you the clear, step-by-step roadmap that takes you from
+                        "thinking about buying" to "holding your keys" with confidence.</p>
+                    <p>Most first-time buyers wing it, rely on outdated advice from friends, or trust the first lender
+                        they talk to—and it costs them thousands. <strong>But it doesn't have to be this way for
+                            you.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Solution / What You'll Learn -->
+        <section class="solution-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2 style="margin-bottom: 2rem;">Here's Exactly What You'll Learn</h2>
+                    <p class="subheadline" style="max-width: 800px; margin: 0 auto 3rem;">On this free live training,
+                        Patrick Jones—California mortgage broker with over 10 years of experience—will walk you through
+                        the exact blueprint his clients use to go from confused to confident.</p>
+                </div>
+
+                <div class="module-grid">
+                    <!-- Module 1 -->
+                    <div class="module-card">
+                        <div class="module-title">Module 1: The Credit & Pre-Approval Power Play</div>
+                        <ul>
+                            <li>The "4 C's" of lending—what lenders actually evaluate (it's not just your credit score)
+                            </li>
+                            <li>How to interpret your credit report like a pro and address red flags before they derail
+                                you</li>
+                            <li>The exact documents to gather for lightning-fast pre-approval (save 2-3 weeks)</li>
+                            <li>When to start the pre-approval process for maximum negotiating power</li>
+                        </ul>
+                    </div>
+
+                    <!-- Module 2 -->
+                    <div class="module-card">
+                        <div class="module-title">Module 2: Down Payment Decoded</div>
+                        <ul>
+                            <li>How much you really need to save (hint: it might be less than you think)</li>
+                            <li>California-specific down payment assistance programs nobody tells you about</li>
+                            <li>The hidden costs beyond down payment: closing costs, reserves, and emergency fund
+                                planning</li>
+                            <li>Creative strategies for non-traditional income and self-employed borrowers</li>
+                        </ul>
+                    </div>
+
+                    <!-- Module 3 -->
+                    <div class="module-card">
+                        <div class="module-title">Module 3: Mortgage Options Demystified</div>
+                        <ul>
+                            <li>Plain-English breakdown of FHA, Conventional, VA, and other loan types</li>
+                            <li>How to choose the right mortgage for YOUR financial situation (not what the internet
+                                says)</li>
+                            <li>Fixed vs. ARM: when each makes sense (and when they don't)</li>
+                            <li>Rate locks, points, and terms explained in human language</li>
+                        </ul>
+                    </div>
+
+                    <!-- Module 4 -->
+                    <div class="module-card">
+                        <div class="module-title">Module 4: The Purchase Process Roadmap</div>
+                        <ul>
+                            <li>The exact timeline from pre-approval to closing day (with key milestones)</li>
+                            <li>How to avoid the 7 most expensive first-time buyer mistakes</li>
+                            <li>What to watch for during inspections, appraisals, and final walkthrough</li>
+                            <li>Your post-purchase financial strategy (because homeownership doesn't end at closing)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="outcomes-block">
+                    <h3 class="text-center">BY THE END OF THIS WEBINAR, YOU'LL KNOW:</h3>
+                    <div class="outcomes-list">
+                        <div class="outcome-item">
+                            <span>✓</span> Exactly what steps to take today to start your homebuying journey
+                        </div>
+                        <div class="outcome-item">
+                            <span>✓</span> Whether you're ready to buy now or what you need to do to get ready
+                        </div>
+                        <div class="outcome-item">
+                            <span>✓</span> How to position yourself as a lender's dream borrower
+                        </div>
+                        <div class="outcome-item">
+                            <span>✓</span> The questions to ask every lender, agent, and inspector
+                        </div>
+                        <div class="outcome-item">
+                            <span>✓</span> How to avoid the costly mistakes that trip up 90% of first-time buyers
+                        </div>
+                        <div class="outcome-item">
+                            <span>✓</span> Where to find thousands in down payment assistance you didn't know existed
+                        </div>
+                        <div class="outcome-item">
+                            <span>✓</span> The confidence to move forward with a clear, proven plan
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Host Bio -->
+        <section class="bio-section">
+            <div class="container">
+                <div class="bio-grid">
+                    <div class="bio-img-container">
+                        <img src="assets/img/HSS Logo solo.png" alt="Patrick Jones"
+                            style="max-width: 300px; margin: 0 auto; background: #fff; padding: 2rem; object-fit: contain;">
+                        <!-- Note: User provided logo assets but not a headshot. Using Solo logo as placeholder or if appropriate. 
+                             Ideally would request a headshot. For now, styling it to look good. -->
+                    </div>
+
+                    <div class="bio-content">
+                        <span class="eyebrow"
+                            style="background: #e6f2ff; color: #0770BE; padding: 0.25rem 0.75rem; border-radius: 50px; font-weight: 600; font-size: 0.85rem;">MEET
+                            YOUR INSTRUCTOR</span>
+                        <h2>Patrick Jones</h2>
+                        <span class="bio-title">Certified Mortgage Broker | Home Strategy Services</span>
+
+                        <p>Patrick has been helping people navigate the tough housing market for over 10 years,
+                            specializing in first-time homebuyer success stories. He's guided hundreds of California
+                            families from "dreaming about homeownership" to "holding their keys"—even those who thought
+                            they weren't ready.</p>
+
+                        <h4 style="margin-top: 1.5rem;">Why Listen to Patrick?</h4>
+                        <ul class="bio-credibility">
+                            <li>10+ years as a certified mortgage broker in California's competitive market</li>
+                            <li>Specializes in first-time homebuyers, self-employed borrowers, and low-down-payment
+                                strategies</li>
+                            <li>Has helped clients secure over $50M in home financing</li>
+                            <li>Known for translating "mortgage speak" into plain English his clients actually
+                                understand</li>
+                            <li>Stays on top of California-specific programs and assistance options most buyers never
+                                hear about</li>
+                        </ul>
+
+                        <div class="bio-mission">
+                            "I created this training because I was tired of seeing smart, capable people miss out on
+                            homeownership simply because they didn't have the right information at the right time. My
+                            mission is to empower you with expert knowledge so you can make confident, informed
+                            decisions."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: FAQ -->
+        <section class="faq-section">
+            <div class="container faq-container">
+                <h2 class="text-center" style="margin-bottom: 3rem;">FREQUENTLY ASKED QUESTIONS</h2>
+
+                <details class="faq-item">
+                    <summary>Q: Is this really free?</summary>
+                    <p>A: Yes, completely free. No credit card required, no hidden fees. Patrick's mission is to empower
+                        first-time buyers with the knowledge they need to succeed.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Q: Will this be recorded if I can't make it live?</summary>
+                    <p>A: While we'll have a limited replay available, the live session includes Q&A where Patrick
+                        answers your specific questions. We strongly recommend attending live for the full experience.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Q: I'm not sure I'm ready to buy yet. Is this still for me?</summary>
+                    <p>A: Absolutely! This training will help you determine if you're ready now OR show you exactly what
+                        steps to take to get ready. Many attendees are 6-12 months away from buying—and that's the
+                        perfect time to learn this information.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Q: I'm not in California. Will this still help me?</summary>
+                    <p>A: While Patrick specializes in California and covers CA-specific programs, 85% of the content
+                        applies to first-time buyers nationwide. You'll still learn the fundamentals every buyer needs
+                        to know.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Q: Is this going to be a pushy sales pitch?</summary>
+                    <p>A: No. Patrick teaches for 45-50 minutes, then briefly shares how he can continue to support you
+                        if you'd like personalized help. There's zero pressure—the training delivers massive value
+                        whether you work with him or not.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Q: What if I have a bad credit score?</summary>
+                    <p>A: Perfect—that's exactly what Patrick will address. You'll learn what lenders really look for,
+                        how to improve your position, and strategies for buyers with less-than-perfect credit.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Q: How long is the webinar?</summary>
+                    <p>A: Plan for 60 minutes. Patrick keeps it concise and actionable—no fluff, just the critical
+                        information you need to move forward with confidence.</p>
+                </details>
+
+            </div>
+        </section>
+
+        <!-- Section 6: Urgency / Final CTA -->
+        <section class="urgency-section">
+            <div class="container">
+                <div class="scarcity-box">
+                    <strong>⚠️ SEATS ARE LIMITED</strong><br>
+                    To ensure individual attention during Q&A, we're capping attendance at 200. <strong>127 people have
+                        already registered.</strong>
+                </div>
+
+                <div class="final-cta-box">
+                    <h2>DON'T MISS THIS OPPORTUNITY</h2>
+                    <p class="subheadline" style="max-width: 700px; margin: 0 auto 2rem;">This is your chance to get
+                        clear, expert guidance from a California mortgage broker who's helped hundreds of first-time
+                        buyers navigate this exact process. You'll walk away with a concrete action plan.</p>
+
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <span class="detail-icon">📅</span>
+                            <div>
+                                <small style="color:#666; display:block;">Date</small>
+                                Tuesday, February 3rd, 2026
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🕐</span>
+                            <div>
+                                <small style="color:#666; display:block;">Time</small>
+                                7:00 PM PST (8:00 PM MST / 10:00 PM EST)
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">⏱️</span>
+                            <div>
+                                <small style="color:#666; display:block;">Duration</small>
+                                60 Minutes
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">💻</span>
+                            <div>
+                                <small style="color:#666; display:block;">Location</small>
+                                100% Online via Zoom
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#"
+                        onclick="document.querySelector('#registration-form').scrollIntoView({behavior: 'smooth'}); return false;"
+                        class="btn btn-primary btn-large btn-full-mobile">SAVE MY FREE SEAT →</a>
+                    <p class="p-small" style="margin-top: 1rem;">Register now to secure your spot and receive the
+                        pre-webinar preparation guide.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container text-center" style="padding: 2rem 0; font-size: 0.875rem; color: #666;">
+            <p>&copy; 2026 Home Strategy Services. All rights reserved.</p>
+            <p><a href="#" style="color: #666;">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
