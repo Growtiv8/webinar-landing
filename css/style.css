@@ -208,21 +208,34 @@ header {
   margin-bottom: 1.25rem;
 }
 
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-row .form-group {
+  margin-bottom: 0;
+  width: 100%;
+}
+
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
-  font-weight: 500;
-  font-size: 0.95rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-dark);
 }
 
 .form-control {
   width: 100%;
-  padding: 0.875rem;
-  border: 1px solid #ddd;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e0e0e0;
   border-radius: var(--radius-md);
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-family: inherit;
-  transition: border-color 0.2s;
+  transition: all 0.2s ease;
+  background-color: #fcfcfc;
 }
 
 textarea.form-control {
@@ -232,13 +245,30 @@ textarea.form-control {
 
 select.form-control {
   cursor: pointer;
-  background-color: var(--white);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  appearance: none;
+  padding-right: 2.5rem;
 }
 
 .form-control:focus {
   outline: none;
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(7, 112, 190, 0.1);
+  background-color: var(--white);
+  box-shadow: 0 0 0 3px rgba(7, 112, 190, 0.15);
+}
+
+.form-control:hover {
+  border-color: #b0b0b0;
+}
+
+@media (max-width: 576px) {
+  .form-row {
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
 }
 
 .form-check {

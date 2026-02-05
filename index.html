@@ -114,98 +114,108 @@
                         <div class="reg-form-card">
                             <h3>Save My Free Seat</h3>
                             <form action="#" method="POST" id="registration-form">
-                                <div class="form-group">
-                                    <label for="first_name">First Name*</label>
-                                    <input type="text" id="first_name" name="first_name" class="form-control" required
-                                        placeholder="Enter your first name">
+                                <div class="form-row">
+                                    <div class="form-group half-width">
+                                        <label for="first_name">First Name*</label>
+                                        <input type="text" id="first_name" name="first_name" class="form-control" required
+                                            placeholder="First name">
+                                    </div>
+    
+                                    <div class="form-group half-width">
+                                        <label for="last_name">Last Name*</label>
+                                        <input type="text" id="last_name" name="last_name" class="form-control" required
+                                            placeholder="Last name">
+                                    </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="last_name">Last Name*</label>
-                                    <input type="text" id="last_name" name="last_name" class="form-control" required
-                                        placeholder="Enter your last name">
+                                <div class="form-row">
+                                    <div class="form-group half-width">
+                                        <label for="email">Email Address*</label>
+                                        <input type="email" id="email" name="email" class="form-control" required
+                                            placeholder="Best email">
+                                    </div>
+    
+                                    <div class="form-group half-width">
+                                        <label for="phone">Phone*</label>
+                                        <input type="tel" id="phone" name="phone" class="form-control" required
+                                            placeholder="(555) 555-5555">
+                                    </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="email">Email Address*</label>
-                                    <input type="email" id="email" name="email" class="form-control" required
-                                        placeholder="Enter your best email">
+                                <div class="form-row">
+                                    <div class="form-group half-width">
+                                        <label for="preferred_contact">Preferred Contact*</label>
+                                        <select id="preferred_contact" name="preferred_contact" class="form-control" required>
+                                            <option value="">Select...</option>
+                                            <option value="Text">Text</option>
+                                            <option value="Email">Email</option>
+                                            <option value="Phone">Phone</option>
+                                        </select>
+                                    </div>
+    
+                                    <div class="form-group half-width">
+                                        <label for="first_time_buyer">First-Time Buyer?*</label>
+                                        <select id="first_time_buyer" name="first_time_buyer" class="form-control" required>
+                                            <option value="">Select...</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                            <option value="Unsure">Unsure</option>
+                                        </select>
+                                    </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="phone">Phone*</label>
-                                    <input type="tel" id="phone" name="phone" class="form-control" required
-                                        placeholder="(555) 555-5555">
+                                <div class="form-row">
+                                    <div class="form-group half-width">
+                                        <label for="timeline">Timeline*</label>
+                                        <select id="timeline" name="timeline" class="form-control" required>
+                                            <option value="">Select...</option>
+                                            <option value="0-3 months">0–3 months</option>
+                                            <option value="3-6 months">3–6 months</option>
+                                            <option value="6-12 months">6–12 months</option>
+                                            <option value="12+ months">12+ months</option>
+                                            <option value="Just researching">Just researching</option>
+                                        </select>
+                                    </div>
+    
+                                    <div class="form-group half-width">
+                                        <label for="credit_score">Credit Score*</label>
+                                        <select id="credit_score" name="credit_score" class="form-control" required>
+                                            <option value="">Select...</option>
+                                            <option value="760+">760+</option>
+                                            <option value="720-759">720–759</option>
+                                            <option value="680-719">680–719</option>
+                                            <option value="640-679">640–679</option>
+                                            <option value="Below 640">Below 640</option>
+                                            <option value="Prefer not to say">Prefer not to say</option>
+                                        </select>
+                                    </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="preferred_contact">Preferred Contact Method*</label>
-                                    <select id="preferred_contact" name="preferred_contact" class="form-control" required>
-                                        <option value="">Select an option...</option>
-                                        <option value="Text">Text</option>
-                                        <option value="Email">Email</option>
-                                        <option value="Phone">Phone</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="first_time_buyer">First-Time Buyer?*</label>
-                                    <select id="first_time_buyer" name="first_time_buyer" class="form-control" required>
-                                        <option value="">Select an option...</option>
-                                        <option value="Yes">Yes</option>
-                                        <option value="No">No</option>
-                                        <option value="Unsure">Unsure</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="timeline">Timeline*</label>
-                                    <select id="timeline" name="timeline" class="form-control" required>
-                                        <option value="">Select an option...</option>
-                                        <option value="0-3 months">0–3 months</option>
-                                        <option value="3-6 months">3–6 months</option>
-                                        <option value="6-12 months">6–12 months</option>
-                                        <option value="12+ months">12+ months</option>
-                                        <option value="Just researching">Just researching</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="credit_score">Credit Score Range*</label>
-                                    <select id="credit_score" name="credit_score" class="form-control" required>
-                                        <option value="">Select an option...</option>
-                                        <option value="760+">760+</option>
-                                        <option value="720-759">720–759</option>
-                                        <option value="680-719">680–719</option>
-                                        <option value="640-679">640–679</option>
-                                        <option value="Below 640">Below 640</option>
-                                        <option value="Prefer not to say">Prefer not to say</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="down_payment">Down Payment Status*</label>
-                                    <select id="down_payment" name="down_payment" class="form-control" required>
-                                        <option value="">Select an option...</option>
-                                        <option value="Saved">Saved</option>
-                                        <option value="Partially saved">Partially saved</option>
-                                        <option value="Not yet">Not yet</option>
-                                        <option value="Not sure">Not sure</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="veteran_status">Veteran Status*</label>
-                                    <select id="veteran_status" name="veteran_status" class="form-control" required>
-                                        <option value="">Select an option...</option>
-                                        <option value="Yes">Yes</option>
-                                        <option value="No">No</option>
-                                    </select>
+                                <div class="form-row">
+                                    <div class="form-group half-width">
+                                        <label for="down_payment">Down Payment*</label>
+                                        <select id="down_payment" name="down_payment" class="form-control" required>
+                                            <option value="">Select...</option>
+                                            <option value="Saved">Saved</option>
+                                            <option value="Partially saved">Partially saved</option>
+                                            <option value="Not yet">Not yet</option>
+                                            <option value="Not sure">Not sure</option>
+                                        </select>
+                                    </div>
+    
+                                    <div class="form-group half-width">
+                                        <label for="veteran_status">Veteran Status*</label>
+                                        <select id="veteran_status" name="veteran_status" class="form-control" required>
+                                            <option value="">Select...</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                    </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="questions">Questions (optional)</label>
-                                    <textarea id="questions" name="questions" class="form-control" rows="3"
+                                    <textarea id="questions" name="questions" class="form-control" rows="2"
                                         placeholder="Any questions you'd like answered during the webinar?"></textarea>
                                 </div>
 
