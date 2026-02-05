@@ -121,32 +121,97 @@
                                 </div>
 
                                 <div class="form-group">
+                                    <label for="last_name">Last Name*</label>
+                                    <input type="text" id="last_name" name="last_name" class="form-control" required
+                                        placeholder="Enter your last name">
+                                </div>
+
+                                <div class="form-group">
                                     <label for="email">Email Address*</label>
                                     <input type="email" id="email" name="email" class="form-control" required
                                         placeholder="Enter your best email">
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="phone">Mobile Phone Number*</label>
+                                    <label for="phone">Phone*</label>
                                     <input type="tel" id="phone" name="phone" class="form-control" required
                                         placeholder="(555) 555-5555">
-                                    <small style="color: #666; font-size: 0.8em; display: block; margin-top: 4px;">For
-                                        webinar reminders</small>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="agent_status">Are you currently working with a real estate
-                                        agent?</label>
-                                    <select id="agent_status" name="agent_status" class="form-control">
+                                    <label for="preferred_contact">Preferred Contact Method*</label>
+                                    <select id="preferred_contact" name="preferred_contact" class="form-control" required>
+                                        <option value="">Select an option...</option>
+                                        <option value="Text">Text</option>
+                                        <option value="Email">Email</option>
+                                        <option value="Phone">Phone</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="first_time_buyer">First-Time Buyer?*</label>
+                                    <select id="first_time_buyer" name="first_time_buyer" class="form-control" required>
+                                        <option value="">Select an option...</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                        <option value="Unsure">Unsure</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="timeline">Timeline*</label>
+                                    <select id="timeline" name="timeline" class="form-control" required>
+                                        <option value="">Select an option...</option>
+                                        <option value="0-3 months">0–3 months</option>
+                                        <option value="3-6 months">3–6 months</option>
+                                        <option value="6-12 months">6–12 months</option>
+                                        <option value="12+ months">12+ months</option>
+                                        <option value="Just researching">Just researching</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="credit_score">Credit Score Range*</label>
+                                    <select id="credit_score" name="credit_score" class="form-control" required>
+                                        <option value="">Select an option...</option>
+                                        <option value="760+">760+</option>
+                                        <option value="720-759">720–759</option>
+                                        <option value="680-719">680–719</option>
+                                        <option value="640-679">640–679</option>
+                                        <option value="Below 640">Below 640</option>
+                                        <option value="Prefer not to say">Prefer not to say</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="down_payment">Down Payment Status*</label>
+                                    <select id="down_payment" name="down_payment" class="form-control" required>
+                                        <option value="">Select an option...</option>
+                                        <option value="Saved">Saved</option>
+                                        <option value="Partially saved">Partially saved</option>
+                                        <option value="Not yet">Not yet</option>
+                                        <option value="Not sure">Not sure</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="veteran_status">Veteran Status*</label>
+                                    <select id="veteran_status" name="veteran_status" class="form-control" required>
                                         <option value="">Select an option...</option>
                                         <option value="Yes">Yes</option>
                                         <option value="No">No</option>
                                     </select>
                                 </div>
 
+                                <div class="form-group">
+                                    <label for="questions">Questions (optional)</label>
+                                    <textarea id="questions" name="questions" class="form-control" rows="3"
+                                        placeholder="Any questions you'd like answered during the webinar?"></textarea>
+                                </div>
+
                                 <div class="form-check">
-                                    <input type="checkbox" id="sms_consent" name="sms_consent" checked>
-                                    <label for="sms_consent">Send me webinar reminders via text</label>
+                                    <input type="checkbox" id="sms_consent" name="sms_consent" required>
+                                    <label for="sms_consent">By submitting this form, you agree to receive text messages from Home Strategy Services about this webinar and related follow-up. Msg & data rates may apply. Reply STOP to opt out.</label>
                                 </div>
 
                                 <button type="submit" class="btn btn-primary btn-full-mobile">SAVE MY FREE SEAT

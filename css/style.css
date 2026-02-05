@@ -225,6 +225,16 @@ header {
   transition: border-color 0.2s;
 }
 
+textarea.form-control {
+  resize: vertical;
+  min-height: 80px;
+}
+
+select.form-control {
+  cursor: pointer;
+  background-color: var(--white);
+}
+
 .form-control:focus {
   outline: none;
   border-color: var(--primary-color);
@@ -233,14 +243,20 @@ header {
 
 .form-check {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   gap: 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   margin-bottom: 1.5rem;
+  line-height: 1.4;
 }
 
 .form-check input {
   margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.form-check label {
+  color: var(--text-light);
 }
 
 .p-small {
